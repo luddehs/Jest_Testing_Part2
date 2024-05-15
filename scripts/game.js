@@ -60,7 +60,11 @@ function playerTurn() {
             game.score++;
             showScore();
             addTurn();
-        }}
+        }
+    } else {
+        alert("Wrong move!");
+        newGame();
+    }
 }
 
 module.exports = { game, newGame, showScore, addTurn, lightsOn, showTurns, playerTurn  };
